@@ -26,9 +26,57 @@
   top: 0;
   left: 0;
   overflow: hidden;
+  z-index: 0;
 
   #experience-canvas{
   height: 100%;
   width: 100%;
+  }
+}
+
+// About text
+.About-text {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  color: rgb(10, 10, 10);
+  z-index: 10;
+  padding: 8px 16px;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  pointer-events: none;
+    font-family: "Italiana", sans-serif;
+    font-weight: 1000;
+    font-style: bold;
+   h1 {
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+
+// Make a vish text
+.star-tooltip {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255);
+  font-family: 'Italiana', sans-serif;
+  font-size: 18px;
+  padding: 8px 16px;
+  margin: 0;
+  background: rgba(54, 53, 53, 0.5);
+  border-radius: 8px;
+  pointer-events: none;
+  font-family: "Italiana", sans-serif;
+    font-weight: 1000;
+    font-style: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 10;
+
+  &.visible {
+    opacity: 1;
   }
 }
