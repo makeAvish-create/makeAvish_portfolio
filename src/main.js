@@ -122,7 +122,7 @@ const textureMap = {
    "2": "/Textures/Scene_2_rocks.webp",
    "3": "/Textures/Scene_3_well.webp",
    "4": "/Textures/Scene_4_yel_flr.webp",
-   "5": "/Textures/Scene_5_pink_flr.webp",
+  //  "5": "/Textures/Scene_5_pink_flr.webp",
    "6": "/Textures/Scene_6_roof.webp",
    "8": "/Textures/Scene_8_text.webp",
    "9": "/Textures/Scene_9_landscape.webp",
@@ -142,7 +142,7 @@ Object.entries(textureMap).forEach(([key, path]) => {
 
 
 // GLB load
-loader.load("/Models/vj_portfolio-v6.glb", (gLb)=>{
+loader.load("/Models/vj_portfolio-v7.glb", (gLb)=>{
   gLb.scene.traverse(child=>{
     if(child.isMesh){
       console.log(child.name);
